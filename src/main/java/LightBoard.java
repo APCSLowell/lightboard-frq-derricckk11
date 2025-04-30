@@ -81,10 +81,10 @@ public class LightBoard
  
   } //end of method
   
-  public boolean[][] getLights()
-  {
-    return lights;
-  }
+  // public boolean[][] getLights()
+  // {
+  //   return lights;
+  // }
   //used for testing
   public String toString()
   {
