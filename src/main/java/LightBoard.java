@@ -42,49 +42,39 @@ public class LightBoard
 
     int total = 0;
 
-    if(lights[row][col] == true){
-
-      //add.
-      for(int r = 0; r < row; r++){
-        if(lights[r][col] == true){
-
-
+       for(int r = 0; r < row; r++){
+        if(lights[r][col] == true){ // go through each row + the col stays the same
+          
           total++;
           
         } //end of if
         
       } // end of for
 
+    if(lights[row][col] == true){   
+
        if(total % 2 == 0){
 
         return false;
          
-      }  //end of if
+      }  //end of inner if
       
     } else {
       
-      for(int r = 0; r < row; r++){
-        if(lights[r][col] == true){
-
-
-          total++;
-          
-        } //end of if
-
      if(total % 3 == 0){
 
         return true;
       }// end of if
-    } //end of for
+    } //end of if
 
     return lights[row][col];
  
   } //end of method
   
-  // public boolean[][] getLights()
-  // {
-  //   return lights;
-  // }
+  public boolean[][] getLights()
+  {
+    return lights;
+  }
   //used for testing
   public String toString()
   {
