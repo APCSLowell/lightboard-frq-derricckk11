@@ -18,7 +18,7 @@ public class LightBoard
 
       for (int c = 0; c < lights[r]; c++){
 
-        if((int)(((Math.random() * 101) + 1) <= 40){
+        if(  (int)((Math.random() * 101) + 1) <= 40){
 
           lights[r][c] = true;
         } else {
