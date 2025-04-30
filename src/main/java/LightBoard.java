@@ -18,9 +18,10 @@ public class LightBoard
 
       for (int c = 0; c < lights[r].length; c++){
 
-        if(  (int)((Math.random() * 101) + 1) <= 40){
+        if ((int)((Math.random() * 101)) <= 40){
 
           lights[r][c] = true;
+          
         } else {
 
            lights[r][c] = false;
@@ -53,14 +54,24 @@ public class LightBoard
         }
         
       } // end of for
-      
-    } else {
 
        if(total % 2 == 0){
 
         return false;
          
-      } else if(total % 3 == 0){
+      } 
+      
+    } else {
+      
+      for(int r = 0; r < row; r++){
+        if(lights[r][col] == true){
+
+
+          total++;
+          
+        }
+
+     if(total % 3 == 0){
 
         return true;
       }
