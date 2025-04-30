@@ -51,7 +51,7 @@ public class LightBoard
 
           total++;
           
-        }
+        } //end of if
         
       } // end of for
 
@@ -59,7 +59,7 @@ public class LightBoard
 
         return false;
          
-      } 
+      }  //end of if
       
     } else {
       
@@ -69,17 +69,17 @@ public class LightBoard
 
           total++;
           
-        }
+        } //end of if
 
      if(total % 3 == 0){
 
         return true;
-      }
-    }
+      }// end of if
+    } //end of for
 
     return lights[row][col];
  
-  }
+  } //end of method
   
   public boolean[][] getLights()
   {
