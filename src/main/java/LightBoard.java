@@ -21,7 +21,7 @@ public class LightBoard
         if((int)(((Math.random() * 101) + 1) <= 40){
 
           lights[r][c] = true;
-        } else{
+        } else {
 
            lights[r][c] = false;
           
@@ -43,11 +43,24 @@ public class LightBoard
 
     if(light[row][col] == true){
 
-      //add. 
+      //add.
+      for(int r = 0; r < row; r++){
+        if(light[r][col] == true){
+
+
+          total++;
+          
+        }
+        
+      } // end of for
       
     } else {
 
-      if(total % 3 == 0){
+       if(total % 2 == 0){
+
+        return false;
+         
+      } else if(total % 3 == 0){
 
         return true;
       }
@@ -56,6 +69,7 @@ public class LightBoard
     return lights[row][col];
  
   }
+  
   public boolean[][] getLights()
   {
     return lights;
