@@ -16,7 +16,7 @@ public class LightBoard
 
     for(int r = 0; r < numRows; r++){
 
-      for (int c = 0; c < lights[r]; c++){
+      for (int c = 0; c < lights[r].length; c++){
 
         if(  (int)((Math.random() * 101) + 1) <= 40){
 
@@ -41,11 +41,11 @@ public class LightBoard
 
     int total = 0;
 
-    if(light[row][col] == true){
+    if(lights[row][col] == true){
 
       //add.
       for(int r = 0; r < row; r++){
-        if(light[r][col] == true){
+        if(lights[r][col] == true){
 
 
           total++;
