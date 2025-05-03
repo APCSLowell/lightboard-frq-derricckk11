@@ -42,7 +42,7 @@ public class LightBoard
 
     int total = 0;
 
-       for(int r = 0; r < row; r++){
+       for(int r = 0; r < lights.length ; r++){
         if(lights[r][col] == true){ // go through each row + the col stays the same
           
           total++;
