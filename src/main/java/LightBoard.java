@@ -51,20 +51,16 @@ public class LightBoard
         
       } // end of for
 
-    if(lights[row][col] == true){   
-
-       if(total % 2 == 0){
+    if(lights[row][col] == true && total % 2 == 0){
 
         return false;
-         
-      }  //end of inner if
-      
+    
     } else {
       
-     if(total % 3 == 0){
+     if(lights[row][col] == false && total % 3 == 0){
 
         return true;
-      }// end of if
+      
     } //end of if
 
     return lights[row][col];
