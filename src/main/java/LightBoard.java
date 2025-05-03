@@ -55,7 +55,7 @@ public class LightBoard
 
         return false;
     
-    } else if(lights[row][col] == false && total % 3 == 0){
+    } else if(!lights[row][col] && total % 3 == 0){
 
         return true;
       
