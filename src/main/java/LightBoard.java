@@ -55,9 +55,7 @@ public class LightBoard
 
         return false;
     
-    } else {
-      
-     if(lights[row][col] == false && total % 3 == 0){
+    } else if(lights[row][col] == false && total % 3 == 0){
 
         return true;
       
@@ -66,6 +64,8 @@ public class LightBoard
     return lights[row][col];
  
   } //end of method
+
+  //}
   
   public boolean[][] getLights()
   {
